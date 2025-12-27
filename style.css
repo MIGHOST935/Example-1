@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+body {
+    margin: 0;
+    color: #f8fafc;
+    background: #0b0614;
+    line-height: 1.7;
+}
+
+/* Фон с градиентами */
+.bg {
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(circle at 20% 30%, #7c3aed66, transparent 45%),
+        radial-gradient(circle at 80% 20%, #6366f166, transparent 40%),
+        radial-gradient(circle at 60% 80%, #a855f766, transparent 50%);
+    z-index: -1;
+}
+
+/* Hero */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding-left: 10vw;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.lead {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+/* Ряды */
+.row {
+    display: flex;
+    padding: 100px 10vw;
+}
+
+.row.left {
+    justify-content: flex-start;
+}
+
+.row.right {
+    justify-content: flex-end;
+}
+
+.row.wide {
+    justify-content: center;
+}
+
+.content {
+    max-width: 480px;
+}
+
+.content h2 {
+    margin-bottom: 15px;
+}
+
+.content ul,
+.content ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 3px solid #c4b5fd;
+    padding-left: 15px;
+    margin: 20px 0;
+    opacity: 0.8;
+}
+
+/* Акцент */
+.highlight .content {
+    max-width: 600px;
+}
+
+.big {
+    font-size: 1.6em;
+    color: #e9d5ff;
+}
+
+/* Footer */
+footer {
+    padding: 60px 10vw;
+    text-align: center;
+    opacity: 0.6;
+}
+
+/* Адаптация */
+@media (max-width: 800px) {
+    .hero {
+        padding-left: 6vw;
+        min-height: auto;
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+
+    .row {
+        flex-direction: column;
+        padding: 60px 6vw;
+        justify-content: flex-start !important;
+    }
+
+    .row.right,
+    .row.left {
+        justify-content: flex-start;
+    }
+
+    .hero h1 {
+        font-size: 2.4em;
+    }
+
+    .content {
+        max-width: 100%;
+    }
+}
