@@ -22,4 +22,4 @@
 
 1. Клонируйте репозиторий:
 ```bash
-git clone https://github.com/MIGHOST935/Portfolio.git
+git clone https://github.com/MIGHOST935/Example-1.git
